@@ -6,8 +6,6 @@ function getRequest(url) {
     let request = new XMLHttpRequest();
     request.open('GET', url);
     request.onreadystatechange = () => {
-      console.log(request);
-
       if (request.readyState === 4) {
         if (request.status !== 200) {
           if (request.response) {
